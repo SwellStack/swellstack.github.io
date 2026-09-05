@@ -21,6 +21,11 @@ publishes on every push.
 
 ## Google Search Console verification
 
-`index.html` has a commented-out spot for the `google-site-verification` meta tag. Get the code
-from [Search Console](https://search.google.com/search-console) → Add property → `https://swellstack.github.io` →
-HTML tag method → paste the code in, uncomment, push.
+Verified two ways, either is enough on its own — kept both since neither costs anything:
+
+- `google96be931d0a9e778b.html` at the repo root (HTML file method).
+- The `google-site-verification` meta tag in `index.html`'s `<head>` (HTML tag method).
+
+If Search Console property is ever recreated, get a fresh code from
+[Search Console](https://search.google.com/search-console) → Add property →
+`https://swellstack.github.io` and swap in whichever of the two matches the method you pick.
