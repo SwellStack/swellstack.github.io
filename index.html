@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwellStack</title>
+    <meta
+      name="description"
+      content="SwellStack builds a small suite of internal tools sharing one identity provider — Authentication-api."
+    />
+    <!--
+      Google Search Console site verification tag goes here once generated
+      (Search Console → Add property → URL prefix → HTML tag method):
+      <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE" />
+    -->
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f5f6f8;
+        --surface: #ffffff;
+        --border: #dde1e6;
+        --text: #1c2126;
+        --text-muted: #5b6470;
+        --primary: #2f6f4f;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        line-height: 1.6;
+      }
+      header,
+      main,
+      footer {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      header {
+        padding-top: 56px;
+        padding-bottom: 24px;
+      }
+      .wordmark {
+        font-weight: 700;
+        font-size: 28px;
+        margin: 0;
+      }
+      .tagline {
+        color: var(--text-muted);
+        margin: 8px 0 0;
+      }
+      main {
+        padding-bottom: 48px;
+      }
+      section {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 24px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        margin-top: 0;
+        font-size: 18px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      a {
+        color: var(--primary);
+      }
+      footer {
+        padding-bottom: 56px;
+        color: var(--text-muted);
+        font-size: 14px;
+      }
+      footer a {
+        color: inherit;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p class="wordmark">SwellStack</p>
+      <p class="tagline">A small suite of internal tools, one shared identity provider.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>What SwellStack is</h2>
+        <p>
+          SwellStack is not a consumer product — it's the umbrella under which we build and
+          operate a handful of internal tools for our own use, sharing one central identity and
+          access-control service (<strong>Authentication-api</strong>) instead of each tool
+          re-implementing its own login, users, and permissions.
+        </p>
+        <p>Signing in with Google against SwellStack authenticates you into one of these tools:</p>
+        <ul>
+          <li><strong>MyVault</strong> — a personal finance tracker.</li>
+          <li><strong>LineEdge</strong> — a sports-prediction and betting-analysis platform.</li>
+          <li>
+            Internal backoffices used to administer the apps above (managing accounts, API keys,
+            and permissions).
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Data and privacy</h2>
+        <p>
+          When you sign in with Google, we ask for your basic profile (name, email address,
+          profile picture) to create and identify your account. Read exactly what we collect and
+          why in our <a href="privacy/">Privacy Policy</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          Questions about SwellStack, any of the tools above, or this site:
+          <a href="mailto:swellstack@gmail.com">swellstack@gmail.com</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="privacy/">Privacy Policy</a> · <a href="mailto:swellstack@gmail.com">Contact</a></p>
+    </footer>
+  </body>
+</html>

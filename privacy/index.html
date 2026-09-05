@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — SwellStack</title>
+    <meta name="description" content="Privacy Policy for SwellStack and the tools that authenticate through it." />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f5f6f8;
+        --surface: #ffffff;
+        --border: #dde1e6;
+        --text: #1c2126;
+        --text-muted: #5b6470;
+        --primary: #2f6f4f;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        line-height: 1.6;
+      }
+      header,
+      main,
+      footer {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      header {
+        padding-top: 56px;
+        padding-bottom: 8px;
+      }
+      .wordmark {
+        font-weight: 700;
+        font-size: 28px;
+        margin: 0;
+      }
+      .updated {
+        color: var(--text-muted);
+        font-size: 14px;
+        margin: 8px 0 0;
+      }
+      main {
+        padding-bottom: 48px;
+      }
+      section {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 24px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        margin-top: 0;
+        font-size: 18px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      a {
+        color: var(--primary);
+      }
+      footer {
+        padding-bottom: 56px;
+        color: var(--text-muted);
+        font-size: 14px;
+      }
+      footer a {
+        color: inherit;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p class="wordmark">SwellStack</p>
+      <p class="updated">Privacy Policy — last updated September 5, 2026</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Scope of this policy</h2>
+        <p>
+          This policy covers the identity provider we call <strong>Authentication-api</strong>
+          and the "Sign in with Google" flow it exposes, used by SwellStack's internal tools
+          (<strong>MyVault</strong>, <strong>LineEdge</strong>, and the backoffices used to
+          administer them). These are internal tools we build and run for our own use, not a
+          public consumer product — this policy exists so that, whichever of them you use,
+          the same rules apply to your account data.
+        </p>
+      </section>
+
+      <section>
+        <h2>What we collect</h2>
+        <p>When you sign in with Google, Google shares with us:</p>
+        <ul>
+          <li>Your name</li>
+          <li>Your email address</li>
+          <li>Your Google account profile picture (if you have one)</li>
+          <li>A Google-issued identifier for your account (not your Google password — we never see it)</li>
+        </ul>
+        <p>
+          If you register with an email and password instead of Google, we collect and store
+          your name, email address, and a salted hash of your password — never the password
+          itself in plain text.
+        </p>
+        <p>
+          Once you're signed in, the specific tool you use (MyVault, LineEdge, etc.) stores the
+          data you enter into that tool — for example, MyVault stores the financial records you
+          add, LineEdge stores the picks and parlays it evaluates for you. That data belongs to
+          the tool you're using and is scoped to your account only; it is not shared between
+          tools or with the other sections of SwellStack.
+        </p>
+      </section>
+
+      <section>
+        <h2>Why we collect it</h2>
+        <p>We use this data strictly to:</p>
+        <ul>
+          <li>Create and identify your account across sessions.</li>
+          <li>Authenticate you and enforce which tool(s) and permissions your account has access to.</li>
+          <li>Contact you about your account if needed (e.g., a security notice).</li>
+        </ul>
+        <p>
+          We do not use your data for advertising, we do not sell it, and we do not share it
+          with any third party other than Google (solely to verify your sign-in) and the
+          infrastructure providers that host our services (database and hosting providers),
+          who process it only on our behalf and under contract, never for their own purposes.
+        </p>
+      </section>
+
+      <section>
+        <h2>Where it's stored</h2>
+        <p>
+          Account and authentication data is stored in a managed PostgreSQL database with
+          encryption at rest, accessible only by the SwellStack services that need it. Access
+          tokens are short-lived (about 15 minutes); refresh tokens are stored as a one-way hash,
+          never in plain text, so a database leak alone would not expose usable credentials.
+        </p>
+      </section>
+
+      <section>
+        <h2>Retention and deletion</h2>
+        <p>
+          We keep your account data for as long as your account exists. You can ask us to
+          delete your account and associated data at any time by emailing
+          <a href="mailto:swellstack@gmail.com">swellstack@gmail.com</a> from the address
+          registered to the account — we'll confirm and process the deletion within a
+          reasonable time.
+        </p>
+      </section>
+
+      <section>
+        <h2>Children's privacy</h2>
+        <p>
+          SwellStack's tools are not directed at children, and we do not knowingly collect data
+          from anyone under 13. If you believe a child has created an account, contact us and
+          we'll remove it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes to this policy</h2>
+        <p>
+          If this policy changes in a way that affects what we collect or how we use it, we'll
+          update the date at the top of this page. Continued use of any SwellStack tool after a
+          change means you accept the update.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          Questions about this policy or your data: <a href="mailto:swellstack@gmail.com">swellstack@gmail.com</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="../">Home</a> · <a href="mailto:swellstack@gmail.com">Contact</a></p>
+    </footer>
+  </body>
+</html>
